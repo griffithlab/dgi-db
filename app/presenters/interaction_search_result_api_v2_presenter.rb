@@ -78,5 +78,9 @@ class InteractionSearchResultApiV2Presenter
     def publications
       interaction.publications.map(&:pmid)
     end
+
+    def score
+      interaction.interaction_score.round(2)
+    end
   end
 end

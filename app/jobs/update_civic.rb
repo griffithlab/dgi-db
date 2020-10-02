@@ -1,6 +1,6 @@
 class UpdateCivic < ApiUpdater
-  def create_updater
-    Genome::OnlineUpdaters::Civic::Updater.new()
+  def create_importer
+    Genome::Importers::ApiImporters::Civic::Importer.new()
   end
 
   def should_group_genes?

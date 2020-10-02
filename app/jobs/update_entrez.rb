@@ -4,7 +4,7 @@ class UpdateEntrez < TsvUpdater
   end
 
   def create_importer
-    Genome::Importers::Entrez::NewEntrez.new(tempfile)
+    Genome::Importers::TsvImporters::Entrez.new(tempfile)
   end
 
   def latest_url

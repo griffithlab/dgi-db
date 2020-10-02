@@ -33,7 +33,7 @@ class UpdateGuideToPharmacology < TsvUpdater
   end
 
   def create_importer
-    Genome::Importers::GuideToPharmacology::GuideToPharmacology.new(interaction_tempfile, gene_tempfile)
+    Genome::Importers::TsvImporters::GuideToPharmacology.new(interaction_tempfile, gene_tempfile)
   end
 
   def interaction_url

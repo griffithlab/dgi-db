@@ -2,19 +2,7 @@ require 'tempfile'
 require 'open-uri'
 
 class TsvUpdater < Updater
-  attr_reader :tempfile, :importer
-
-  def perform()
-    ActiveRecord::Base.transaction(joinable: false, requires_new: true) do
-      import
-      pre_grouper = PreGrouper.new
-      pre_grouper.perform
-      grouper = Grouper.new
-      grouper.perform(should_group_genes?, should_group_drugs?, importer.source.id)
-      post_grouper = PostGrouper.new
-      post_grouper.perform(should_cleanup_gene_claims?)
-    end
-  end
+  attr_reader :tempfile
 
   def import
     begin
@@ -48,13 +36,8 @@ class TsvUpdater < Updater
     raise StandardError.new('Must implement #latst_url in subclass')
   end
 
-  def create_importer
-    raise StandardError.new('Must implement #create_importer in subclass')
-  end
-
   def remove_download
     tempfile.close
     tempfile.unlink
   end
-
 end

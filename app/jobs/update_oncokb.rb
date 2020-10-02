@@ -1,6 +1,6 @@
 class UpdateOncokb < ApiUpdater
-  def updater
-    Genome::OnlineUpdaters::Oncokb::Updater.new()
+  def create_importer
+    Genome::Importers::ApiImporters::Oncokb::Importer.new()
   end
 
   def should_group_genes?

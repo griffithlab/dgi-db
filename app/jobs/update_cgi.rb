@@ -10,7 +10,7 @@ class UpdateCgi < TsvUpdater
   end
 
   def create_importer
-    Genome::Importers::Cgi::NewCgi.new(tempfile)
+    Genome::Importers::TsvImporters::Cgi.new(tempfile)
   end
 
   def download_file

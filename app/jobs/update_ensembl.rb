@@ -6,7 +6,7 @@ class UpdateEnsembl < TsvUpdater
   end
 
   def create_importer
-    Genome::Importers::Ensembl::NewEnsembl.new(tempfile, latest_version)
+    Genome::Importers::TsvImporters::Ensembl.new(tempfile, latest_version)
   end
 
   def latest_version

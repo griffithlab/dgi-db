@@ -1,6 +1,6 @@
 class UpdateDocm < ApiUpdater
-  def create_updater
-    Genome::OnlineUpdaters::Docm::Updater.new()
+  def create_importer
+    Genome::Importers::ApiImporters::Docm::Importer.new()
   end
 
   def should_group_genes?

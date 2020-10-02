@@ -72,7 +72,7 @@
         through a simple JSON based interface.
       %p
         All endpoints can be reached at:
-        %code http://dgidb.org
+        %code https://dgidb.org
       %p
         Documentation for v1 of the API (deprecated) can be found
         =link_to 'here.', 'api_v1'
@@ -217,7 +217,7 @@
             by the source.
             =link_to('TALC', source_path('TALC')) + '.'
         %pre
-          \http://dgidb.org/api/v2/interactions.json?genes=FLT1,MM1,FAKE&amp;nteraction_sources=TALC
+          \https://dgidb.org/api/v2/interactions.json?genes=FLT1,MM1,FAKE&amp;nteraction_sources=TALC
         %h5 Example Response:
         %p
           The response will come back with three top level items:
@@ -485,7 +485,7 @@
           parameters to iterate through all the variants.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/interactions
+          \https://dgidb.org/api/v2/interactions
         %h5 Query Parameters:
         %table.table.table-bordered.table-striped
           %thead
@@ -520,7 +520,7 @@
                 "total_pages": 1192,
                 "total_count": 29783,
                 "links": {
-                  "next": "http://localhost:3000/api/v2/interactions?count=25&page=2",
+                  "next": "https://dgidb.org/api/v2/interactions?count=25&page=2",
                   "previous": null
                 }
               },
@@ -551,7 +551,7 @@
           The interaction details endpoint can be used to retrieve detailed information about one particular interaction.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/interactions/&#60;interaction_id&#62;
+          \https://dgidb.org/api/v2/interactions/&#60;interaction_id&#62;
         %h5
           Example Call:
         %p
@@ -561,7 +561,7 @@
             ID
             %code 53b9d202-9241-4064-87b3-0ae0be49390a
         %pre
-          \http://dgidb.org/api/v2/interactions/53b9d202-9241-4064-87b3-0ae0be49390a
+          \https://dgidb.org/api/v2/interactions/53b9d202-9241-4064-87b3-0ae0be49390a
         %h5
           Example Response:
         %button.btn.btn-mini.btn-link{data: { toggle: 'collapse', target: '#example-one-interaction-response'}}
@@ -681,7 +681,7 @@
           parameters to iterate through all the variants.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/drugs
+          \https://dgidb.org/api/v2/drugs
         %h5 Query Parameters:
         %table.table.table-bordered.table-striped
           %thead
@@ -715,7 +715,7 @@
                 "total_pages": 380,
                 "total_count": 9495,
                 "links": {
-                  "next": "http://localhost:3000/api/v2/drugs?count=25&page=2",
+                  "next": "http://dgidb.org/api/v2/drugs?count=25&page=2",
                   "previous": null
                 }
               },
@@ -747,7 +747,7 @@
           The drug details endpoint can be used to retrieve detailed information about one particular drug.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/drugs/&#60;chembl_id&#62;
+          \https://dgidb.org/api/v2/drugs/&#60;chembl_id&#62;
         %h5
           Example Call:
         %p
@@ -757,7 +757,7 @@
             ChEMBL ID
             %code CHEMBL1237026
         %pre
-          \http://dgidb.org/api/v2/drugs/CHEMBL1237026
+          \https://dgidb.org/api/v2/drugs/CHEMBL1237026
         %h5
           Example Response:
         %button.btn.btn-mini.btn-link{data: { toggle: 'collapse', target: '#example-one-drug-response'}}
@@ -1174,7 +1174,7 @@
           parameters to iterate through all the variants.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/genes
+          \https://dgidb.org/api/v2/genes
         %h5 Query Parameters:
         %table.table.table-bordered.table-striped
           %thead
@@ -1208,7 +1208,7 @@
                 "total_pages": 1644,
                 "total_count": 41100,
                 "links": {
-                  "next": "http://localhost:3000/api/v2/genes?count=25&page=2",
+                  "next": "http://dgidb.org/api/v2/genes?count=25&page=2",
                   "previous": null
                 }
               },
@@ -1235,7 +1235,7 @@
           The gene details endpoint can be used to retrieve detailed information about one particular gene.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/genes/&#60;entrez_id&#62;
+          \https://dgidb.org/api/v2/genes/&#60;entrez_id&#62;
         %h5
           Example Call:
         %p
@@ -1245,7 +1245,7 @@
             Entrez ID
             %code 346
         %pre
-          \http://dgidb.org/api/v2/genes/346
+          \https://dgidb.org/api/v2/genes/346
         %h5
           Example Response:
         %button.btn.btn-mini.btn-link{data: { toggle: 'collapse', target: '#example-one-gene-response'}}
@@ -1369,7 +1369,7 @@
           interaction types for use in the interactions endpoint.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/interaction_types.json
+          \https://dgidb.org/api/v2/interaction_types.json
         %h5 Example Response:
         %button.btn.btn-mini.btn-link{data: { toggle: 'collapse', target: '#example-interaction-types-response'}}
           Show/Hide Response
@@ -1384,7 +1384,7 @@
           interaction sources for use in calls to the interactions endpoint.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/interaction_sources.json
+          \https://dgidb.org/api/v2/interaction_sources.json
         %h5 Example Response:
         %button.btn.btn-mini.btn-link{data: { toggle: 'collapse', target: '#example-interaction-sources-response'}}
           Show/Hide Response
@@ -1399,7 +1399,7 @@
           gene categories for use in calls to the interactions endpoint.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/gene_categories.json
+          \https://dgidb.org/api/v2/gene_categories.json
         %h5 Example Response:
         %button.btn.btn-mini.btn-link{data: { toggle: 'collapse', target: '#example-gene-categories-response'}}
           Show/Hide Response
@@ -1414,7 +1414,7 @@
           source trust levels for use in calls to the interactions endpoint.
         %span.label GET
         %pre
-          \http://dgidb.org/api/v2/source_trust_levels.json
+          \https://dgidb.org/api/v2/source_trust_levels.json
         %h5 Example Response:
         %button.btn.btn-mini.btn-link{data: { toggle: 'collapse', target: '#example-source-trust-levels-response'}}
           Show/Hide Response
@@ -1454,7 +1454,7 @@
               The following example would query DGIdb for a list of genes known to interact with
               FLT1 or FLT3
           %pre
-            \http://dgidb.org/api/v2/related_genes.json?genes=FLT1,FLT3
+            \https://dgidb.org/api/v2/related_genes.json?genes=FLT1,FLT3
           %h5 Example Response:
           %p
             The response will come back containing a list of hashes each with two keys:
@@ -1555,7 +1555,7 @@
           %small
             The following example would query DGIdb for a list of genes known to be Kinases
         %pre
-          \http://dgidb.org/api/v2/genes_in_category.json?category=kinase
+          \https://dgidb.org/api/v2/genes_in_category.json?category=kinase
         %h5 Example Response:
         %button.btn.btn-mini.btn-link{data: { toggle: 'collapse', target: '#example-genes-in-category-response'}}
           Show/Hide Response
@@ -1682,7 +1682,7 @@
           <br><br>Try the following examples from the command line to view and format output from the API:<br>
           %span.label SAMPLE CODE
           %pre
-            curl http://dgidb.org/api/v2/interactions.json<br><br>curl http://dgidb.org/api/v2/interactions.json?genes=FLT3<br><br>curl http://dgidb.org/api/v2/interactions.json?genes=FLT3 | python -mjson.tool<br><br>curl http://dgidb.org/api/v2/interactions.json?genes=FLT3,STK1,FAKE1 | python -mjson.tool<br><br>curl http://dgidb.org/api/v2/interactions.json?genes=STK1,FAKE1 | python -mjson.tool<br><br>curl http://dgidb.org/api/v2/interactions.json?genes=STK1,FAKE1 | python -mjson.tool<br><br>curl http://dgidb.org/api/v2/interactions.json?genes=FLT3,STK1,FAKE1&amp;interaction_sources=TTD,DrugBank | python -mjson.tool<br><br>curl http://dgidb.org/api/v2/interactions.json?genes=FLT3,STK1,FAKE1&amp;interaction_sources=TTD,DrugBank&amp;interaction_type=inhibitor | python -mjson.tool<br>
+            curl https://dgidb.org/api/v2/interactions.json<br><br>curl https://dgidb.org/api/v2/interactions.json?genes=FLT3<br><br>curl https://dgidb.org/api/v2/interactions.json?genes=FLT3 | python -mjson.tool<br><br>curl https://dgidb.org/api/v2/interactions.json?genes=FLT3,STK1,FAKE1 | python -mjson.tool<br><br>curl https://dgidb.org/api/v2/interactions.json?genes=STK1,FAKE1 | python -mjson.tool<br><br>curl https://dgidb.org/api/v2/interactions.json?genes=STK1,FAKE1 | python -mjson.tool<br><br>curl https://dgidb.org/api/v2/interactions.json?genes=FLT3,STK1,FAKE1&amp;interaction_sources=TTD,DrugBank | python -mjson.tool<br><br>curl https://dgidb.org/api/v2/interactions.json?genes=FLT3,STK1,FAKE1&amp;interaction_sources=TTD,DrugBank&amp;interaction_type=inhibitor | python -mjson.tool<br>
       %hr
 
   :css

@@ -61,11 +61,11 @@ UpdateCivic:
   queue: default
   class: UpdateCivic
 
-UpdateCkb:
+UpdateJaxCkb:
   cron: '0 1 */14 * *'
   description: Update data from JAX CKB
   queue: default
-  class: UpdateCkb
+  class: UpdateJaxCkb
 
 UpdateOncokb:
   cron: '0 2 */14 * *'

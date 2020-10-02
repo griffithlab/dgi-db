@@ -1,3 +1,4 @@
+require 'genome/importers/delimited_row'
 module Genome
   module Importers
     module Entrez

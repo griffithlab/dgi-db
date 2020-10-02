@@ -1,6 +1,6 @@
 class UpdatePharos < ApiUpdater
-  def create_updater
-    Genome::OnlineUpdaters::Pharos::Updater.new()
+  def create_importer
+    Genome::Importers::ApiImporters::Pharos::Importer.new()
   end
 
   def should_group_genes?

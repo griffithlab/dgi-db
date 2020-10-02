@@ -6,7 +6,7 @@ class UpdateDtc < TsvUpdater
   end
 
   def create_importer
-    Genome::Importers::Dtc::DtcImporter.new(tempfile)
+    Genome::Importers::TsvImporters::Dtc.new(tempfile)
   end
 
   def latest_url
