@@ -40,7 +40,7 @@ def parse_args():
 
 class DGIAPI:
     'API Example class for DGI API.'
-    domain = 'http://dgidb.org/'
+    domain = 'https://dgidb.org/'
     api_path = '/api/v1/interactions.json'
     def __init__(self, args):
         self.genes = args.genes
@@ -54,7 +54,7 @@ class DGIAPI:
         self.post_request()
         self.print_response()
     def create_request(self):
-        self.request = "http://dgidb.org/api/v1/interactions.json?genes=FLT1&drug_types=antineoplastic&interaction_sources=TALC"
+        self.request = "https://dgidb.org/api/v1/interactions.json?genes=FLT1&drug_types=antineoplastic&interaction_sources=TALC"
         self.payload = {}
         if(self.genes):
             self.payload['genes'] = self.genes
