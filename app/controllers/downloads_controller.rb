@@ -10,7 +10,7 @@ class DownloadsController < ApplicationController
         file_h[file] = File.join(tsv_dir, subdir, file)
       end
     end
-    sorted_files = unsorted_files.sort_by{|key, values| Date.parse(key).strftime("%s").to_i}.reverse!
+    sorted_files = unsorted_files.sort_by{|key, values| Date.strptime(key, "%Y-%b").strftime("%s").to_i}.reverse!
     @files = sorted_files
   end
 end
