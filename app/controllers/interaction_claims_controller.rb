@@ -30,7 +30,7 @@ class InteractionClaimsController < ApplicationController
     @view_context = view_context
     unpack_locals(params)
     perform_interaction_search
-    if @search_results.search_results.length == 1
+    if @search_results.search_results.length == 1 && @search_results.search_results[0].identifiers.length == 1
       redirect_to "/#{params['search_mode']}/#{ERB::Util.url_encode(@search_results.search_results[0].identifiers[0]['name'])}#_interactions"
     else
       prepare_export
